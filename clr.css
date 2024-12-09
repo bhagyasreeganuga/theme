@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+:root {
+    --background-color: #f8f8f8;
+    --text-color: #333;
+    --header-background: #e85d04;
+    --footer-background: #333;
+    --footer-text-color: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header {
+    background: var(--header-background);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header p {
+    font-size: 1.5em;
+}
+
+.theme-toggle {
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.destination {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.destination:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: background 0.3s ease-in-out;
+}
+
+.info h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.info p {
+    font-size: 1em;
+}
+
+.footer {
+    text-align: center;
+    background: var(--footer-background);
+    color: var(--footer-text-color);
+    padding: 20px;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    --background-color: #333;
+    --text-color: #f8f8f8;
+    --header-background: #555;
+    --footer-background: #222;
+    --footer-text-color: #fff;
+}
+
+body.dark-theme .theme-toggle {
+    background-color: #f8f8f8;
+    color: #333;
+}
